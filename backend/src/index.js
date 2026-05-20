@@ -4,6 +4,11 @@ const cors = require('cors');
 require('dotenv').config();
 
 const authRoutes = require('./routes/auth');
+const productRoutes = require('./routes/products');
+const adminRoutes = require('./routes/admin');
+const orderRoutes = require('./routes/orders');
+const reviewRoutes = require('./routes/reviews');
+const recommendationRoutes = require('./routes/recommendations');
 
 const app = express();
 
@@ -13,7 +18,11 @@ app.use(express.json());
 
 // Routes
 app.use('/api/auth', authRoutes);
-
+app.use('/api/products', productRoutes);
+app.use('/api/admin', adminRoutes);
+app.use('/api/orders', orderRoutes);
+app.use('/api/reviews', reviewRoutes);
+app.use('/api/recommendations', recommendationRoutes);
 // Test route
 app.get('/', (req, res) => {
   res.json({ message: 'VendorHub API is running!' });
