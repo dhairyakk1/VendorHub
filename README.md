@@ -1,6 +1,8 @@
 # VendorHub 🛒
 > Hyperlocal Multi-Vendor E-Commerce Platform — Built for DevFusion Hackathon 2.0
 
+🌐 **Live Demo: https://thevendorhub.vercel.app/**
+
 VendorHub connects local sellers with buyers in their community. Sellers list products, manage orders and earnings. Buyers get a smooth shopping experience with AI-powered search and recommendations.
 
 ---
